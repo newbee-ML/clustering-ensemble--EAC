@@ -1,4 +1,3 @@
-import numpy as np
 from cluster_method import *
 from EAC import EAC
 
@@ -16,6 +15,7 @@ if __name__ == '__main__':
 
     # 载入模型
     clustering = kmeans_cluster  # 选择K-means聚类方法
+    para_list = np.arange(3, 15, 1)  # K-means的超参列表
     eac = EAC(clustering)
 
     # EAC集成聚类

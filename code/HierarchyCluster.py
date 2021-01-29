@@ -25,5 +25,8 @@ class HC:
         return ret
 
     def _work(self):
-
+        # 初始化
+        compute_dict = {
+            'cluster': {}
+        }
         pass

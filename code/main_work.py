@@ -15,6 +15,12 @@ if __name__ == '__main__':
     data = data_all[:, 1:]
 
     # 载入模型
-    clustering = kmeans_cluster
+    clustering = kmeans_cluster  # 选择K-means聚类方法
     eac = EAC(clustering)
-    eac.ensemble_fit(data)
+
+    # EAC集成聚类
+    result = eac.ensemble_fit(data,
+                              method='single',
+                              if_plot=0)
+    print(result)
+    print(label)
